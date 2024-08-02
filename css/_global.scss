@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $very-dark;
+    background-image: url("../images/bg-cafe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $family;
+}
+
+.container {
+    background-color: $dark;
+    border-radius: 30px;
+    @media (min-width: 1200px) {
+        margin: 50px 100px !important;
+        padding: 50px 100px;
+    }
+    @media (min-width: 922px) and (max-width: 1199px) {
+        margin: 50px 80px !important;
+        padding: 50px 80px;
+    }
+    @media (min-width: 768px) and (max-width: 921px) {
+        margin: 50px 60px !important;
+        padding: 50px 60px;
+    }
+    margin: 50px 30px;
+    padding: 50px 30px;
+    width: 100%;
+}

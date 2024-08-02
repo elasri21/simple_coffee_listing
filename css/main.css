@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121315;
+  background-image: url("../images/bg-cafe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 50vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  background-color: #1C1D1F;
+  border-radius: 30px;
+  margin: 50px 30px;
+  padding: 50px 30px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .container {
+    margin: 50px 100px !important;
+    padding: 50px 100px;
+  }
+}
+@media (min-width: 922px) and (max-width: 1199px) {
+  .container {
+    margin: 50px 80px !important;
+    padding: 50px 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 921px) {
+  .container {
+    margin: 50px 60px !important;
+    padding: 50px 60px;
+  }
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #FEF7EE;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+header p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6F757C;
+  max-width: 500px;
+  line-height: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+header .main-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+header .main-btns button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FEF7EE;
+  text-transform: capitalize;
+  padding: 10px 15px;
+  transition: .3s linear;
+  border-radius: 6px;
+}
+header .main-btns button.active {
+  background-color: #6F757C;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+main .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  main .item {
+    width: calc(33.33% - 20px) !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  main .item {
+    width: calc(50% - 15px) !important;
+  }
+}
+main .item .wraper {
+  position: relative;
+  width: fit-content;
+}
+main .item .wraper .popular {
+  position: absolute;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: #F6C768;
+  border-radius: 30px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+  color: #1C1D1F;
+  top: 10px;
+  left: 10px;
+}
+main .item .wraper img {
+  border-radius: 10px;
+}
+main .item .wraper .name-price {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+main .item .wraper .name-price h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #FEF7EE;
+  text-transform: capitalize;
+}
+main .item .wraper .name-price .price {
+  width: fit-content;
+  padding: 3px 5px;
+  border-radius: 3px;
+  background-color: #BEE3CC;
+  color: #1C1D1F;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+main .item .wraper .rating {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+  font-size: 16px;
+}
+main .item .wraper .rating .fa-solid {
+  color: #F6C768;
+}
+main .item .wraper .rating .fa-regular {
+  color: #6F757C;
+}
+main .item .wraper .rating strong {
+  color: #FEF7EE;
+}
+main .item .wraper .rating p {
+  color: #6F757C;
+  font-weight: 500;
+}
+main .item .wraper .sold-out {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #ED735D;
+  right: 0;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
